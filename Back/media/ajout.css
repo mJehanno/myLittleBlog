@@ -1,0 +1,26 @@
+form {
+    width: 25%;
+    margin-left: 40%;
+    margin-top: 5%;
+}
+
+fieldset {
+    border: 1px dashed darkred;
+    padding-bottom: 2em;
+    padding-top: 1em;
+    border-radius: 10px;
+}
+
+legend {
+    text-align: center;
+}
+
+#form {
+    margin-left: 30%;
+}
+
+label {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 0.3em;
+}

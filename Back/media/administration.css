@@ -1,0 +1,18 @@
+#page {
+    display: block;
+}
+
+#page div {
+    margin-left: 1%;
+    display: inline-block;
+    width: 20%;
+    margin-top: 3%;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 2em;
+    height: 
+}
+
+label {
+    display: block;
+}

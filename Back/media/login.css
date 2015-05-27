@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    margin-top: 4%;
+}
+
+legend{
+    text-align: center;
+    padding: 0.5em;
+    border: 1px dashed red;
+}
+
+fieldset{
+    padding: 2em;
+    border: 1px dashed red;
+}
+
+label{
+    margin-top: 1em;
+    display: block;
+}
+
+input { 
+    margin-top: 0.3em;
+}
+
+#input{
+    margin-left: 45%;
+}
+
+[type=submit] {
+    padding: 0.2em;
+}
+
+#submit {
+    margin-top: 1em;
+}
