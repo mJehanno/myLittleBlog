@@ -1,30 +1,30 @@
-<?php 
-    
+<?php
+
 /* --- Billet de Blog --- */
 
 /* -- Create -- */
 function setBillet($billet,$collection){
-    $collection->insert($billet);
+	$collection->insert($billet);
 }
 
 /* -- Research -- */
 function getAllBillet($collection){
-    $cursor=$collection->find();
-    return $cursor;
+	$cursor=$collection->find();
+	return $cursor;
 }
 
 function getLastBillet(){
-    $cursor=$collection->find();
+	$cursor=$collection->find();
 }
 
 /* -- Update -- */
 function updateBillet(){
-    
+
 }
 
 /* -- Delete -- */
 function deleteBillet(){
-    
+
 }
 
 
@@ -32,11 +32,11 @@ function deleteBillet(){
 
 /* -- Research -- */
 function getAllCategorie($db,$collection){
-    $cursor= $collection->find();
-    foreach($cursor as $result){
-        echo "<option value=".$result['category'].">".$result['category']."</option>";
-        $i++;
-    }
+	$cursor= $collection->find();
+	foreach($cursor as $result){
+		echo "<option value=".$result['category'].">".$result['category']."</option>";
+		$i++;
+	}
 }
 
 
@@ -45,15 +45,16 @@ function getAllCategorie($db,$collection){
 
 /* -- Research -- */
 function getAdmin($collection){
-    $collection -> find();
+	$collection -> find();
 }
 
 
 /* --- Statistique --- */
 
 /* -- Research -- */
-function getNumberBillet(){
-    
+function getNumberBillet($collection){
+	$cursor =$collection -> count();
+	return $cursor;
 }
 
 ?>
