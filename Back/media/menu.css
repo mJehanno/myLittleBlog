@@ -1,18 +1,24 @@
 nav {
-    background-color:darkred;
-    padding: 0.5em;
-    border-radius: 6px;
+	background-color:darkred;
+	padding: 0.5em;
+	border-radius: 6px;
 }
 
 nav a {
-    color: beige;
-    text-decoration: none;
-    border-left: 1px solid beige;
-    border-right: 1px solid beige;
-    padding: 0.4em;
+	color: beige;
+	text-decoration: none;
+	border-left: 1px solid beige;
+	border-right: 1px solid beige;
+	padding: 0.4em;
 }
 
 nav a:hover {
-    background-color: beige;
-    color: darkred;
+	background-color: beige;
+	color: darkred;
+}
+
+nav span {
+	color: beige;
+	position: fixed;
+	right: 100px;
 }

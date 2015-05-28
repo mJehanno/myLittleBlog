@@ -12,6 +12,8 @@ session_start();
 <body>
 	<?php
 		include_once('menu.php');
+		include_once('../connexion.php');
+		include_once('fonction.php');
 	?>
 
 	<div id="page">

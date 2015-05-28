@@ -1,26 +1,31 @@
 form {
-    width: 25%;
-    margin-left: 40%;
-    margin-top: 5%;
+	width: 45%;
+	margin-left: 40%;
+	margin-top: 5%;
 }
 
 fieldset {
-    border: 1px dashed darkred;
-    padding-bottom: 2em;
-    padding-top: 1em;
-    border-radius: 10px;
+	border: 1px dashed darkred;
+	padding-bottom: 2em;
+	padding-top: 1em;
+	border-radius: 10px;
 }
 
 legend {
-    text-align: center;
+	text-align: center;
 }
 
 #form {
-    margin-left: 30%;
+	margin-left: 5%;
+	margin-right: 5%;
 }
 
 label {
-    display: block;
-    margin-top: 1em;
-    margin-bottom: 0.3em;
+	display: block;
+	margin-top: 1em;
+	margin-bottom: 0.3em;
+}
+
+[type='submit']{
+	margin-top: 1.5em;
 }
