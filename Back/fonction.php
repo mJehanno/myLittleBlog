@@ -13,8 +13,9 @@ function getAllBillet($collection){
 	return $cursor;
 }
 
-function getLastBillet(){
-	$cursor=$collection->find();
+function getLastBillet($collection){
+	$cursor = $collection->find()->sort(array("date"=>-1))->limit(1);
+	return $cursor;
 }
 
 /* -- Update -- */

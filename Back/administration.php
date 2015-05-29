@@ -18,13 +18,24 @@ session_start();
 
 	<div id="page">
 		<div id="stat">
-			<label>Nombre de Billets de blog :</label>
+			<label><u>Nombre de Billets de blog :</u></label>
 			<?php $nbBillet = getNumberBillet($collectionBillet); echo $nbBillet; ?>
-			<label>Nombre de commentaire :</label>
+			<label><u>Nombre de commentaire :</u></label>
 		</div>
 		<div id="lastBlog">
-			<label>Dernier Blog :</label>
-			<?php ?>
+			<label><u>Dernier Blog :</u></label><br>
+			<?php $lastBillet = getLastBillet($collectionBillet);
+					foreach($lastBillet as $result){
+						$titre=$result['titre'];
+						$categorie = $result['categorie'];
+						$date = $result['date'];
+						$message = $result['message'];
+					}
+				echo "Titre :".$titre."<br>";
+				echo "Catégorie : ".$categorie."<br>";
+				echo "Date : ".$date."<br>";
+				echo "Message :".$message."</br>";
+			?>
 		</div>
 	</div>
 </body>
