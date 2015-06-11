@@ -13,15 +13,19 @@ function getAllBillet($collection){
 	return $cursor;
 }
 
+function getBilletByTitre($titre,$collection){
+	$qry = array('titre'=>$titre);
+	$cursor = $collection->find($qry);
+	return $cursor;
+}
+
 function getLastBillet($collection){
 	$cursor = $collection->find()->sort(array("date"=>-1))->limit(1);
 	return $cursor;
 }
 
 /* -- Update -- */
-function updateBillet(){
 
-}
 
 /* -- Delete -- */
 function deleteBillet(){
