@@ -41,7 +41,7 @@
 				<input type="hidden" value="<?php echo $result['titre']; ?>" name="oldTitre">
 				<input type="hidden" value="<?php echo $result['categorie']; ?>" name="oldCategorie">
 				<input type="hidden" value="<?php echo $result['date']; ?>" name="oldDate">
-				<input type="hidden" value="<?php echo $result['message']; ?>" name="oldMessage">
+				<input type="hidden" value="<?php echo htmlentities($result['message']); ?>" name="oldMessage">
 				<div id="submit">
 					<input type="submit" value="Modifier" name="update">
 				</div>

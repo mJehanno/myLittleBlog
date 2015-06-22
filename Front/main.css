@@ -1,62 +1,63 @@
 *{
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 html{
-    height: 100%;
+	height: 100%;
 }
 
 body{
-    height: 100%;
+	height: 100%;
 }
 
 h1{
-    text-align: center;
+	text-align: center;
 }
 
 h3{
-    text-align: center;
+	text-align: center;
 }
 
 menu{
-    float: left;
-    background-color: darkred;
-    height: 100%;
-    width: 7%;
+	float: left;
+	background-color: darkred;
+	height: 100%;
+	width: 7%;
 }
 
-menu a{
-    text-align: center;
-    padding: 2em;
-    display: block;
-    color: floralwhite;
+menu span{
+	text-align: center;
+	padding: 2em;
+	display: block;
+	color: floralwhite;
+	cursor: pointer;
 }
 
-.container{
-    padding: 2em;
-    margin-left: 5%;
+.container,.container_ajax{
+	padding: 2em;
+	margin-left: 10%;
 }
 
-.container div{
-    display: inline-block;
+.container div,.container_ajax div{
+	display: inline-block;
 }
 
-.content{
-    padding: 1.5em;
-    border-right: 2px solid darkred;
-    border-left: 2px solid darkred;
-    border-bottom: 2px solid darkred;
-    width: 12%;
+.content,.content_ajax{
+	padding: 1.5em;
+	border-right: 2px solid darkred;
+	border-left: 2px solid darkred;
+	border-bottom: 2px solid darkred;
+	width: 12%;
 }
 
 label{
-    display: block;
-    padding-bottom: 0.5em;
-    color: 
+	display: block;
+	padding-bottom: 0.5em;
+	color:
 }
 
 hr{
-    margin-bottom: 0.5em;
-    border: 1px solid darkred;
+	margin-bottom: 0.5em;
+	border: 1px solid darkred;
 }
