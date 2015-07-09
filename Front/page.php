@@ -1,4 +1,6 @@
 <?php
+
+//créer une page pour afficher un billet en grand
 	require_once('../connexion.php');
 	//require_once('menu.php');
 	require_once('./fonction.php');
