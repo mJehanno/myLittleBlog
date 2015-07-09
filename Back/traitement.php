@@ -14,10 +14,10 @@
 		$cursor = $collectionUser->find();
 		foreach($cursor as $result){
 			$loginDb = $result['login'];
-			$pass = $result['password'];
+			$passDb = $result['password'];
 		}
 
-		if ($login == $loginDb && $pass == "admintest") {
+		if ($login == $loginDb && $pass == $passDb) {
 			header("location:administration.php");
 		}else{
 			header("location:login.php");

@@ -5,4 +5,9 @@
 		return $cursor;
 	}
 
+	function getBilletById($id,$collection){
+		$cursor = $collection -> find(array('id'=>$id));
+		return $cursor;
+	}
+
 ?>

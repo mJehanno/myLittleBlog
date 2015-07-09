@@ -4,8 +4,8 @@
 		<meta charset="utf-8">
 		<title>MyBlog</title>
 		<link href="main.css" rel="stylesheet">
-		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js" type="text/javascript"></script>
+		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
 	</head>
 
 	<body>
@@ -51,22 +51,27 @@
 			}
 
 			function showing(categorie){
+				var span = $('span');
+				var selector = $('#'+categorie);
+				$(span).removeClass('selected');
+				$(selector).addClass('selected');
 				var display  = file('blog.php?display='+escape(categorie));
-				window.setTimeout(function(){writeDiv(display,'h3')},900)
+				window.setTimeout(function(){writeDiv(display,'h3')},900);
 			}
 
 
 		</script>
 		<menu>
 			<span onclick="location.reload();"><u>Accueil</u></span>
-			<span onclick="hiding();showing('dev');" >Dev</span>
-			<span onclick="hiding();showing('divers');" >Divers</span>
-			<span onclick="hiding();showing('envie');" >Envie</span>
-			<span onclick="hiding();showing('emmerde');" >Emmerde</span>
-			<span onclick="hiding();showing('humour');" >Humour</span>
+			<span id="dev" onclick="hiding();showing('dev');">Dev</span>
+			<span onclick="hiding();showing('divers');" id="divers">Divers</span>
+			<span onclick="hiding();showing('envie');" id="envie">Envie</span>
+			<span onclick="hiding();showing('emmerde');" id="emmerde">Emmerde</span>
+			<span onclick="hiding();showing('humour');" id="humour">Humour</span>
 		</menu>
 		<h1>Mes Envies, Mes Humeurs, Mes Emmerdes</h1>
 		<h3>Tout ça réunit en un seul endroit ! </h3>
+
 
 		<div class="container">
 			<?php
@@ -75,18 +80,17 @@
 				$cursor = getAllBillet($collectionBillet);
 				foreach($cursor as $result){
 			?>
-			<div class="content" id="<?php echo $result['_id']; ?>">
+			<a href="page.php?blog=<?php echo $result['_id']; ?>"><div class="content" id="<?php echo $result['_id']; ?>">
 			<label>Titre : <?php echo $result['titre']; ?></label>
 			<hr>
 			<label>Catégorie : <?php echo $result['categorie']; ?></label>
 			<label>Billet : <?php echo $result['message']; ?></label>
 			<em>Publié le : <?php echo $result['date']; ?></em>
-			</div>
+			</div></a>
 			<?php
 				}
 			?>
 		</div>
-
 
 		<footer>
 

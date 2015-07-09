@@ -23,7 +23,7 @@ menu{
 	float: left;
 	background-color: darkred;
 	height: 100%;
-	width: 7%;
+	width: 10%;
 }
 
 menu span{
@@ -35,8 +35,10 @@ menu span{
 }
 
 .container,.container_ajax{
+	position: relative;
 	padding: 2em;
 	margin-left: 10%;
+	width: 60%;
 }
 
 .container div,.container_ajax div{
@@ -44,6 +46,7 @@ menu span{
 }
 
 .content,.content_ajax{
+	margin-top: 0.7em;
 	padding: 1.5em;
 	border-right: 2px solid darkred;
 	border-left: 2px solid darkred;
@@ -60,4 +63,20 @@ label{
 hr{
 	margin-bottom: 0.5em;
 	border: 1px solid darkred;
+}
+
+span:hover{
+	background-color: floralwhite;
+	color: darkred;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+span:link{
+
+}
+
+.selected{
+	border-bottom: 3px solid floralwhite;
+	border-top: 3px solid floralwhite;
 }
