@@ -5,8 +5,8 @@
 		return $cursor;
 	}
 
-	function getBilletById($id,$collection){
-		$cursor = $collection -> find(array('id'=>$id));
+	function getBilletByTitle($titre,$collection){
+		$cursor = $collection -> find(array('titre' => $titre));
 		return $cursor;
 	}
 

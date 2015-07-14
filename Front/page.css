@@ -1,0 +1,56 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+h1{
+	font-size: 35px;
+	text-align: center;
+}
+
+.contenu{
+	margin-left: 20em;
+	margin-top: 5em;
+}
+
+em{
+	margin-left: 20em;
+}
+
+.contenu p{
+	font-size: 20px;
+}
+
+
+/* -- Formulaire de commentaire -- */
+
+#form{
+	margin: 7em auto 0 auto;
+	text-align: center;
+	z-index: 1;
+	border: 2px solid darkred;
+	border-radius: 10px;
+	width: 20%;
+	height: 350px;
+	padding: 1.7em;
+}
+
+
+
+#form label{
+
+}
+
+#form input{
+	margin: 0.8em auto 0.8em auto;
+	display: block;
+}
+
+#form textarea{
+	margin: 0.8em auto 0.8em auto;
+	display: block;
+}
+
+#form input[type='submit']{
+	padding: 3px;
+}
